@@ -3,7 +3,7 @@ title: R - Convert a Ensembl gene id to gene symbol
 date: May 01, 2020
 output: 
   prettydoc::html_pretty:
-    theme: cayman
+    theme: minimal
     highlight: github
 ---
 

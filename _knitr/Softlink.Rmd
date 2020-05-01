@@ -3,7 +3,7 @@ title: Python - Softlink
 date: April 07, 2017
 output: 
   prettydoc::html_pretty:
-    theme: cayman
+    theme: minimal
     highlight: github
 ---
 
