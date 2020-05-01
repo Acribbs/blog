@@ -3,19 +3,11 @@ layout: default
 title: My posts
 ---
 
-<h2>{{ page.title }}, happily contributing to <a target="_blank" href="https://www.r-bloggers.com/">R-bloggers</a> and <a target="_blank" href="https://rweekly.org/">R Weekly</a>:</h2>
+<h2>{{ page.title }}:</h2>
 
 <ul class="posts">
 
   {% for post in site.posts %}
     <li><span>{{ post.date | date_to_string }}</span> » <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
   {% endfor %}
-</ul>
-
-
-<h2>Other blogs I like:</h2>
-<ul>
-    <li><a href="http://deanattali.com/">Dean Attali</a></li>
-    <li><a href="http://statr.me/blogs/">Yixuan Qiu</a></li>
-    <li><a href="https://yihui.name/en/">Yihui Xie</a></li>
 </ul>
