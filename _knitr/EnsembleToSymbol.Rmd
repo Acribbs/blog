@@ -1,0 +1,56 @@
+---
+title: R - Convert a Ensembl gene id to gene symbol
+date: May 01, 2020
+output: 
+  prettydoc::html_pretty:
+    theme: cayman
+    highlight: github
+---
+
+One of the most frustrating things about working with ensembl gene Ids is that as humans, we like to see Gene symbols so that we can look through our lists and see our favourite genes. 
+
+I always found converting Ensembl Ids to Symbols in R really annoying. However, there have been a number of packages produced that have helped do this more efficienctly. I will show you how this can be  done in two different ways, (1) using the `org.Hs.eg.db` and (2) `annotables`. 
+
+## Org.Hs.eg.db
+
+```{r, message=FALSE}
+library(org.Hs.eg.db)
+```
+
+```{r, message=FALSE, warning=FALSE}
+infile = read.csv("data/gene_lists.csv")
+data = infile[,"ENSEMBL"]
+
+# You can see that the subset data is listed as a integer, we now need to convert
+# this to a vector to pass it into the annotation mapping
+
+data = as.vector(data)
+
+# Using the org.Hs.eg.db we set up mapping info - if you look at the documentation you
+# can also obtain other keytypes
+
+annots <- select(org.Hs.eg.db, keys=data, 
+                columns="SYMBOL", keytype="ENSEMBL")
+
+result <- merge(infile, annots, by.x="ENSEMBL", by.y="ENSEMBL")
+
+print(head(result))
+
+```
+
+## Annotables
+
+```{r, message=FALSE}
+library(annotables)
+library(tidyverse)
+```
+
+```{r, warning=FALSE}
+infile = read.csv("data/gene_lists.csv")
+
+infile %>% 
+    dplyr::arrange(padj) %>% 
+    head(20) %>% 
+    dplyr::inner_join(grch38, by = c("ENSEMBL" = "ensgene"))
+
+```
