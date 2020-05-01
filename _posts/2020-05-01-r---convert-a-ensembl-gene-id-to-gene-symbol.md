@@ -14,24 +14,23 @@ layout: post
 <div id="org.hs.eg.db" class="section level2">
 <h2>Org.Hs.eg.db</h2>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="kw">library</span>(org.Hs.eg.db)</span></code></pre></div>
-<pre><code>## Warning: package &#39;S4Vectors&#39; was built under R version 3.6.3</code></pre>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a>infile =<span class="st"> </span><span class="kw">read.csv</span>(<span class="st">&quot;data/gene_lists.csv&quot;</span>)</span>
-<span id="cb3-2"><a href="#cb3-2"></a>data =<span class="st"> </span>infile[,<span class="st">&quot;ENSEMBL&quot;</span>]</span>
-<span id="cb3-3"><a href="#cb3-3"></a></span>
-<span id="cb3-4"><a href="#cb3-4"></a><span class="co"># You can see that the subset data is listed as a integer, we now need to convert</span></span>
-<span id="cb3-5"><a href="#cb3-5"></a><span class="co"># this to a vector to pass it into the annotation mapping</span></span>
-<span id="cb3-6"><a href="#cb3-6"></a></span>
-<span id="cb3-7"><a href="#cb3-7"></a>data =<span class="st"> </span><span class="kw">as.vector</span>(data)</span>
-<span id="cb3-8"><a href="#cb3-8"></a></span>
-<span id="cb3-9"><a href="#cb3-9"></a><span class="co"># Using the org.Hs.eg.db we set up mapping info - if you look at the documentation you</span></span>
-<span id="cb3-10"><a href="#cb3-10"></a><span class="co"># can also obtain other keytypes</span></span>
-<span id="cb3-11"><a href="#cb3-11"></a></span>
-<span id="cb3-12"><a href="#cb3-12"></a>annots &lt;-<span class="st"> </span><span class="kw">select</span>(org.Hs.eg.db, <span class="dt">keys=</span>data, </span>
-<span id="cb3-13"><a href="#cb3-13"></a>                <span class="dt">columns=</span><span class="st">&quot;SYMBOL&quot;</span>, <span class="dt">keytype=</span><span class="st">&quot;ENSEMBL&quot;</span>)</span>
-<span id="cb3-14"><a href="#cb3-14"></a></span>
-<span id="cb3-15"><a href="#cb3-15"></a>result &lt;-<span class="st"> </span><span class="kw">merge</span>(infile, annots, <span class="dt">by.x=</span><span class="st">&quot;ENSEMBL&quot;</span>, <span class="dt">by.y=</span><span class="st">&quot;ENSEMBL&quot;</span>)</span>
-<span id="cb3-16"><a href="#cb3-16"></a></span>
-<span id="cb3-17"><a href="#cb3-17"></a><span class="kw">print</span>(<span class="kw">head</span>(result))</span></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a>infile =<span class="st"> </span><span class="kw">read.csv</span>(<span class="st">&quot;data/gene_lists.csv&quot;</span>)</span>
+<span id="cb2-2"><a href="#cb2-2"></a>data =<span class="st"> </span>infile[,<span class="st">&quot;ENSEMBL&quot;</span>]</span>
+<span id="cb2-3"><a href="#cb2-3"></a></span>
+<span id="cb2-4"><a href="#cb2-4"></a><span class="co"># You can see that the subset data is listed as a integer, we now need to convert</span></span>
+<span id="cb2-5"><a href="#cb2-5"></a><span class="co"># this to a vector to pass it into the annotation mapping</span></span>
+<span id="cb2-6"><a href="#cb2-6"></a></span>
+<span id="cb2-7"><a href="#cb2-7"></a>data =<span class="st"> </span><span class="kw">as.vector</span>(data)</span>
+<span id="cb2-8"><a href="#cb2-8"></a></span>
+<span id="cb2-9"><a href="#cb2-9"></a><span class="co"># Using the org.Hs.eg.db we set up mapping info - if you look at the documentation you</span></span>
+<span id="cb2-10"><a href="#cb2-10"></a><span class="co"># can also obtain other keytypes</span></span>
+<span id="cb2-11"><a href="#cb2-11"></a></span>
+<span id="cb2-12"><a href="#cb2-12"></a>annots &lt;-<span class="st"> </span><span class="kw">select</span>(org.Hs.eg.db, <span class="dt">keys=</span>data, </span>
+<span id="cb2-13"><a href="#cb2-13"></a>                <span class="dt">columns=</span><span class="st">&quot;SYMBOL&quot;</span>, <span class="dt">keytype=</span><span class="st">&quot;ENSEMBL&quot;</span>)</span>
+<span id="cb2-14"><a href="#cb2-14"></a></span>
+<span id="cb2-15"><a href="#cb2-15"></a>result &lt;-<span class="st"> </span><span class="kw">merge</span>(infile, annots, <span class="dt">by.x=</span><span class="st">&quot;ENSEMBL&quot;</span>, <span class="dt">by.y=</span><span class="st">&quot;ENSEMBL&quot;</span>)</span>
+<span id="cb2-16"><a href="#cb2-16"></a></span>
+<span id="cb2-17"><a href="#cb2-17"></a><span class="kw">print</span>(<span class="kw">head</span>(result))</span></code></pre></div>
 <pre><code>##           ENSEMBL log2FoldChange   baseMean        padj   SYMBOL
 ## 1 ENSG00000000419     0.18713483 1487.61562 0.377139110     DPM1
 ## 2 ENSG00000000457     0.02922775  519.65035 0.927794309    SCYL3
@@ -42,14 +41,14 @@ layout: post
 </div>
 <div id="annotables" class="section level2">
 <h2>Annotables</h2>
-<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1"></a><span class="kw">library</span>(annotables)</span>
-<span id="cb5-2"><a href="#cb5-2"></a><span class="kw">library</span>(tidyverse)</span></code></pre></div>
-<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1"></a>infile =<span class="st"> </span><span class="kw">read.csv</span>(<span class="st">&quot;data/gene_lists.csv&quot;</span>)</span>
-<span id="cb6-2"><a href="#cb6-2"></a></span>
-<span id="cb6-3"><a href="#cb6-3"></a>infile <span class="op">%&gt;%</span><span class="st"> </span></span>
-<span id="cb6-4"><a href="#cb6-4"></a><span class="st">    </span>dplyr<span class="op">::</span><span class="kw">arrange</span>(padj) <span class="op">%&gt;%</span><span class="st"> </span></span>
-<span id="cb6-5"><a href="#cb6-5"></a><span class="st">    </span><span class="kw">head</span>(<span class="dv">20</span>) <span class="op">%&gt;%</span><span class="st"> </span></span>
-<span id="cb6-6"><a href="#cb6-6"></a><span class="st">    </span>dplyr<span class="op">::</span><span class="kw">inner_join</span>(grch38, <span class="dt">by =</span> <span class="kw">c</span>(<span class="st">&quot;ENSEMBL&quot;</span> =<span class="st"> &quot;ensgene&quot;</span>))</span></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1"></a><span class="kw">library</span>(annotables)</span>
+<span id="cb4-2"><a href="#cb4-2"></a><span class="kw">library</span>(tidyverse)</span></code></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1"></a>infile =<span class="st"> </span><span class="kw">read.csv</span>(<span class="st">&quot;data/gene_lists.csv&quot;</span>)</span>
+<span id="cb5-2"><a href="#cb5-2"></a></span>
+<span id="cb5-3"><a href="#cb5-3"></a>infile <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb5-4"><a href="#cb5-4"></a><span class="st">    </span>dplyr<span class="op">::</span><span class="kw">arrange</span>(padj) <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb5-5"><a href="#cb5-5"></a><span class="st">    </span><span class="kw">head</span>(<span class="dv">20</span>) <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb5-6"><a href="#cb5-6"></a><span class="st">    </span>dplyr<span class="op">::</span><span class="kw">inner_join</span>(grch38, <span class="dt">by =</span> <span class="kw">c</span>(<span class="st">&quot;ENSEMBL&quot;</span> =<span class="st"> &quot;ensgene&quot;</span>))</span></code></pre></div>
 <pre><code>##    log2FoldChange   baseMean     padj         ENSEMBL    entrez symbol chr
 ## 1      -0.9193411  3487.4362 1.42e-22 ENSG00000186480      3638 INSIG1   7
 ## 2      -0.8311274  5338.9306 6.31e-18 ENSG00000137309      3159  HMGA1   6
