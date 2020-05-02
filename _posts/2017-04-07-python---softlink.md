@@ -6,7 +6,7 @@ date: "April 07, 2017"
 layout: post
 ---
 
-<script src="{{ site.url }}{{ site.baseurl }}/knitr_files/Statistics_files/header-attrs-2.1/header-attrs.js"></script>
+<script src="{{ site.url }}{{ site.baseurl }}/knitr_files/Softlink_files/header-attrs-2.1/header-attrs.js"></script>
 
 <section class="main-content">
 <p>Ah, I remember the days where I used to copy data from one file location to another so I could perform another type of analysis on the same data. My files were big and my storage limited.</p>

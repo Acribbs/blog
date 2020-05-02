@@ -1,46 +1,12 @@
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-
-<head>
-
-<meta charset="utf-8" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="generator" content="pandoc" />
-<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
-
-<meta name="viewport" content="width=device-width, initial-scale=1">
+---
+title: "Why are biologists scared of statistics and how to overcome it"
 
 
-<meta name="date" content="2020-05-02" />
+date: "May 02, 2020"
+layout: post
+---
 
-<title>Why are biologists scared of statistics and how to overcome it</title>
-
-<script src="Statistics_files/header-attrs-2.1/header-attrs.js"></script>
-
-
-
-
-
-<link rel="stylesheet" href="Statistics_files/style.css" type="text/css" />
-
-
-
-
-
-</head>
-
-<body>
-
-
-
-
-<section class="page-header">
-<h1 class="title toc-ignore project-name">Why are biologists scared of statistics and how to overcome it</h1>
-<h4 class="date project-date">May 02, 2020</h4>
-</section>
-
-
+<script src="{{ site.url }}{{ site.baseurl }}/knitr_files/Statistics_files/header-attrs-2.1/header-attrs.js"></script>
 
 <section class="main-content">
 <p><b style=color:black;>STATISTICS! A word dreaded by biologists throughout the world.</b></p>
@@ -53,18 +19,3 @@
 <p>When I started my fellowship I realised quite quickly that I needed a solid foundation in statistics to overcome my fear, which meant starting from the beginning. My aim in the first year was to undertake courses in basic statistics. I had looked at the open university’s <a href="http://www.open.ac.uk/courses/modules/m249">practical modern statistics</a> because other computational fellows had taken this course and found it really helpful. However, the year I joined the course fees were substantially increased, making this option less favourable. As an alternative I thought I would try the <b style=color:red;>free Coursera online courses</b> in <a href="https://www.coursera.org/learn/basic-statistics/home/welcome">basic statistics</a>. This was a really well designed introduction to statistics and will be helpful to any biologist regardless of their nackground. However, I finished it wanting more advanced learning. Again I relied on Coursera, <a href="https://www.coursera.org/learn/bayesian-statistics/home/welcome">Bayesian Statistics: From Concept to Data Analysis</a> and <a href="https://www.coursera.org/learn/statistical-inference">statistical inference</a>. The main benefit of these courses was that I could learn at a pace that suited me. This gave me the confidence to learn effectively, and then apply the techniques to my own data. Starting simple is the key to demystifying statistics, it’s an uphill struggle so be persistent.</p>
 <p>I hear a lot of people talking about why biologists are poor at maths and stats, and this is sometimes attributed to the inherent nature of biological thinking approaches being incompatible with mathematical thinking. However, I think this is largely unfounded because when you really delve into the reasons why <b style=color:red;>biologists dislike stats, it’s most often because they find it confusing</b>. They find it confusing because they either don’t think it’s relevant and are less likely to pay attention (it certainly is, and therefore this is a worrying sign that they don’t understand the data they have analysed) or haven’t been taught it correctly. With the rise of MOOCS (Massive Open Online Courses) and people promoting the benefits of these courses this will certainly help towards bringing biological and statistical approaches together.</p>
 </section>
-
-
-
-<!-- dynamically load mathjax for compatibility with self-contained -->
-<script>
-  (function () {
-    var script = document.createElement("script");
-    script.type = "text/javascript";
-    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
-    document.getElementsByTagName("head")[0].appendChild(script);
-  })();
-</script>
-
-</body>
-</html>
