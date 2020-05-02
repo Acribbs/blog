@@ -1,0 +1,55 @@
+---
+title: Python - Softlink
+date: April 07, 2017
+output: 
+  prettydoc::html_pretty:
+    theme: minimal
+    highlight: github
+---
+
+Ah, I remember the days where I used to copy data from one file location to another so I could perform another type of analysis on the same data. My files were big and my storage limited.
+
+Thankfully I discovered the Symlink function in the os python module. This allows you to save space by making symbolic links to the original data, cutting down on the wasted duplication of your data files.
+
+```{python, eval=FALSE}
+import os
+import glob
+import re
+```
+
+```{python, eval=FALSE}
+# Use glob.glob and wildcard to find all of your files in a certain directory (In this case I want to search for fastq files)
+infiles = glob.glob("data/*fastq*")
+
+print len(infiles)
+#print(len(infile)) for python 3
+```
+
+```{python, eval=FALSE}
+# set the directory where the new file will be placed
+new_dir = "data/new_data/"
+
+# Next loop through the infiles and isolate the basename
+for infile in infiles:
+    basename = os.path.basename(infile)
+    print basename
+    # or print(basename) for python 3
+    final_file = new_dir + basename
+    print final_file + "\n"
+    
+    # Next use symlink (softlink) functionality of os, but also check to make sure file doesnt already exist in there
+    # this will avoid inadvertently overwriting a previous symlink. Symlink works as follows: os.symlink(source, destination)
+    
+    if not os.path.exists(final_file):
+        os.symlink(infile, final_file)
+    else:
+        print "sample symlink already exists"
+
+```
+
+output:
+data.fastq.gz
+data/new_data/data.fastq.gz
+
+other_data.fastq.gz
+data/new_data/other_data.fastq.gz
