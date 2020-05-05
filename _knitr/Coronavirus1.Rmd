@@ -1,0 +1,36 @@
+---
+title: What impact will coronavirus have on scientific research
+date: May 05, 2020
+output: 
+  prettydoc::html_pretty:
+    theme: cayman 
+    highlight: github
+---
+
+In every financial crisis there have always been scientists who suffer and some who benefit, Coronavirus will be no exception. As scientists we are very good at adapting to new challenges and responding to new external research that may move your own research into a new direction. The magnitude of change seen in society within the last 8-10 weeks has been enormous and has forced many scientists to take a good long hard look at their current careers and their future.
+
+I have been unlucky enough to have seen two major world financial crashes during my scientific career. I began my PhD in 2008/2009, just as the first financial crash was starting to take hold. Despite the world going through an incredibly touch time, I was largely protected during that crisis because of my regular stipend. The financial implications of this crisis on science were seen gradually over many years. This gave scientists a sufficient length of time to react and make decisions about their scientific research and what affect this would ultimately had on their careers. As a consequence, I saw many friends and colleagues leave academic science to persue careers in industry (Im not saying this is a bad thing. The brain drain was only bad for academia).
+
+Fast forward to the current Corona crisis and the financial situation this time around seems incredibly different. I am luck that I have a contract that extends until after 2021 so I am personally not acutely affected by the short term effects of this crisis. However, this will undoutedly have an effect on my future career in science, as it will on all scientists. This is because I am required to attract scientific funding to support my research. As an early career scientist, this year I have been working incredibly hard to move my scientific career forwards. Specifically, trying to attract grant funding so that I can move towards "scientific independence". This basic scientific research is largely supported by charities. These charities include the likes of major players such as the Cancer Research UK, The British Heart Foundation and Wellcome, in addition to smaller charities such as the Bone Cancer Research Trust and Brain Tumour Charity, just to name a few. The income for these charities is largely from donations, event fundraising activities and income from endownments. If you look at the financial income from the CRUK in 2017/2018 you can see that the majority of fuinding is from donations, events and trading, all of which have been reduced with the current crisis.
+
+![CRUK funding]("")
+
+This has meant that CRUK has had to cut back on its current financial commitments just to stay afloat. The impact of the Coronavirus crisis was immediate, within 3 weeks of the government initiating lockdown I recieved two emails from the CRUK stating that the two pending grants have had their decisions deferred until September. The email came with the caveat that the CRUK will need to reevaluate its financial position in the future. This wasnt a shock to me because I was expecting that the Coronavirus would have some financial imoplications for charities, but what did shock me was the speed at which they reacted. I naively though that it would follow a slow predictable wind down of their activitied like the last financial crisis.
+
+The main problem that the charities funding scientific research have had to deal with is warp speed this crisis has occurred at. The financial crash didnt happen over a period of months (like in 2008) it happened over a period of 23-24 days. This is unprecidented in every sense of the word. The immediate effect of this cliff edge crash and the resulting world wide lockdown has meant that charities have their income streams significantly reduced. This has onbiously had a considerable knockon effect on scientists. 
+
+
+
+We need to suport eachother and the people that work for us.
+
+I predict that in the next year ther will be very few funding oppotunities outside of coronavirus
+
+
+Science has always followed the trends, whether this has been for the better or for worse has always been hotly debated. Coronavirus has been no exception, just take a look at the latest copy of nature or science and you will see that Coronavirus dominates the research article section.
+
+Almost all of our current research has been directed towards fining therapies againt coronavirus using treatments that were intially designed for autoimmunity, cancer or other infectious diseases. Sceince is a slow process and we missed the opportunity to address the current crisis effectively by not continuing reseqarch funding on SRARS.Could happen again that reserach funding is reduced for Coronavirus, but this crisis feels differently and I think a large proportion of research funding on Coronavirus will continue. 
+
+
+
+
+Coronavirus funding opportunities listed on the [Science buisiness](https://sciencebusiness.net/coronavirus-funding-opportunities) website.
