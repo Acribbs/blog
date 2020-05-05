@@ -1,46 +1,12 @@
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-
-<head>
-
-<meta charset="utf-8" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="generator" content="pandoc" />
-<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
-
-<meta name="viewport" content="width=device-width, initial-scale=1">
+---
+title: "What impact will coronavirus have on scientific research"
 
 
-<meta name="date" content="2020-05-05" />
+date: "May 05, 2020"
+layout: post
+---
 
-<title>What impact will coronavirus have on scientific research</title>
-
-<script src="Coronavirus1_files/header-attrs-2.1/header-attrs.js"></script>
-
-
-
-
-
-<link rel="stylesheet" href="Coronavirus1_files/style.css" type="text/css" />
-
-
-
-
-
-</head>
-
-<body>
-
-
-
-
-<section class="page-header">
-<h1 class="title toc-ignore project-name">What impact will coronavirus have on scientific research</h1>
-<h4 class="date project-date">May 05, 2020</h4>
-</section>
-
-
+<script src="{{ site.url }}{{ site.baseurl }}/knitr_files/Coronavirus1_files/header-attrs-2.1/header-attrs.js"></script>
 
 <section class="main-content">
 <p>Following every financial crisis in human history there have always been scientists who suffer and those who benefit, Coronavirus will be no exception. As scientists, we are very good at adapting to new challenges and responding to new external research that may move your own research into a new direction. The magnitude of change seen in society within the last 8-10 weeks has been enormous and has forced many scientists to take a good long hard look at their current careers and their future. I myself have been asking the question - where will my research move towards in the future?</p>
@@ -49,7 +15,7 @@
 <h2>The current crisis</h2>
 <p>That was then. Fast forward to the current Coronavirus crisis and the financial situation this time around seems incredibly different. I am luck that I have a contract that extends until after 2021 so I am personally not acutely affected by the short term effects of this crisis. However, this will undoutedly have an effect on my future career in science, as it will on all scientists. This is because I am required to attract scientific funding to support my research. As an early career scientist, this year I have been working incredibly hard to move my scientific career forwards. Specifically, trying to attract grant funding so that I can move towards full “scientific independence”</p>
 <p>For those who dont know, basic scientific research is largely supported by charities. These charities include the likes of major players such as the Cancer Research UK, The British Heart Foundation and Wellcome, in addition to smaller charities such as the Bone Cancer Research Trust and Brain Tumour Charity, just to name a few. The income for these charities is largely from donations, event fundraising activities and income from endownments. If you look at the financial income from the CRUK in 2017/2018 you can see that the majority of their income is from donations, events and trading, all of which have been significantly impacted during the current crisis.</p>
-<p><img src="../images/CRUK_income.png" /><!-- --> - CRUK income 2017/2018</p>
+<p><img src="{{ site.url }}{{ site.baseurl }}/images/CRUK_income.png" /><!-- --> - CRUK income 2017/2018</p>
 </div>
 <div id="the-short-term-implications-of-coronavirus" class="section level2">
 <h2>The short term implications of Coronavirus</h2>
@@ -69,9 +35,9 @@
 <div id="government-supported-science" class="section level3">
 <h3>2. Government supported science</h3>
 <p>When the pandemic is over, the big question will be - “will the UK goverment reduce or increase the amount it funds science?”. The only reliable indication is the 2008 financial crisis. When I went looking for data to help answer this question I realised that its actually quite a complicated question to answer. This is because it depends on which figures you look at. One one hand, funding referenced against GDP did significantly reduce, but this occured across all major economies. However, it is interesting to note that the UK spends the least amount of money on science of all G8 nations, when compared to GDP. This is quite shocking in itself, but thats another story.</p>
-<p><img src="../images/UK-funding.png" /><!-- --> source: <a href="https://scienceogram.org/blog/2015/03/uk-science-bottom-gdp-g8/">Scienceogram</a></p>
+<p><img src="{{ site.url }}{{ site.baseurl }}/images/UK-funding.png" /><!-- --> source: <a href="https://scienceogram.org/blog/2015/03/uk-science-bottom-gdp-g8/">Scienceogram</a></p>
 <p>On another hand, the government did increase overall spending on science (chart below), but reductions in core scientirfic funding (blue bar) were made up by increasing the windfall payments (yellow bars).</p>
-<p><img src="../images/UK-funding2.png" /><!-- --></p>
+<p><img src="{{ site.url }}{{ site.baseurl }}/images/UK-funding2.png" /><!-- --></p>
 <p>source: <a href="https://scienceogram.org/blog/2013/06/spending-review-2013-science-budget/">Scienceogram</a>. blue: core funding, green: capital spending, yellow: windfall payments</p>
 <p>So if history is anything to go by I would be predicting a reduction in scientific spending. However, this crisis is very different from the last, with a solution out of this Coronavirus crisis being a scentific one. Time will tell.</p>
 </div>
@@ -94,18 +60,3 @@
 <p>The Coronavirus epidemic has shown us how fragile the world is, but it has also shown us what is important in life. We have seen some amazing displays of positive humanity during this crisis (For example, see the note someone left on the bins next to my street) and collectively we can overcome this virus. This crisis will pass and it will likely lead to significant changes in the way we do science. If we can adapt to the new scientific and funding challenges then we will have a better chance of succeding in mitigating some of the long term negative consequences of the pandemic.</p>
 </div>
 </section>
-
-
-
-<!-- dynamically load mathjax for compatibility with self-contained -->
-<script>
-  (function () {
-    var script = document.createElement("script");
-    script.type = "text/javascript";
-    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
-    document.getElementsByTagName("head")[0].appendChild(script);
-  })();
-</script>
-
-</body>
-</html>

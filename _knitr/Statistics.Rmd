@@ -1,5 +1,5 @@
 ---
-title: Why are biologists scared of statistics and how to overcome it
+title: Why are biologists afraid of statistics and how to overcome it
 date: May 02, 2020
 output: 
   prettydoc::html_pretty:
