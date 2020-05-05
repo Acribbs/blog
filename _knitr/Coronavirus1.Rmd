@@ -2,9 +2,11 @@
 title: What impact will coronavirus have on scientific research
 date: May 05, 2020
 output: 
-  prettydoc::html_pretty:
-    theme: cayman 
-    highlight: github
+  prettydoc::html_pretty:  # DO NOT CHANGE
+    theme: cayman          # DO NOT CHANGE
+    highlight: github      # DO NOT CHANGE
+    toc: true
+    toc_depth: 2
 ---
 
 Following every financial crisis in human history there have always been scientists who suffer and those who benefit, Coronavirus will be no exception. As scientists, we are very good at adapting to new challenges and responding to new external research that may move your own research into a new direction. The magnitude of change seen in society within the last 8-10 weeks has been enormous and has forced many scientists to take a good long hard look at their current careers and their future. I myself have been asking the question - where will my research move towards in the future? 
@@ -58,7 +60,7 @@ source: [Scienceogram](https://scienceogram.org/blog/2015/03/uk-science-bottom-g
 
 On another hand, the government did increase overall spending on science (chart below), but reductions in core scientirfic funding (blue bar) were made up by increasing the windfall payments  (yellow bars). 
 
-```{r, echo=FALSE}
+```{r,  echo=FALSE}
 knitr::include_graphics("../images/UK-funding2.png")
 
 ```
