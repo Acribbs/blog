@@ -57,6 +57,7 @@ layout: post
 </div>
 <div id="final-words" class="section level2">
 <h2>Final words</h2>
-<p>The Coronavirus epidemic has shown us how fragile the world is, but it has also shown us what is important in life. We have seen some amazing displays of positive humanity during this crisis (For example, see the note someone left on the bins next to my street) and collectively we can overcome this virus. This crisis will pass and it will likely lead to significant changes in the way we do science. If we can adapt to the new scientific and funding challenges then we will have a better chance of succeding in mitigating some of the long term negative consequences of the pandemic.</p>
+<p>The Coronavirus epidemic has shown us how fragile the world is, but it has also shown us what is important in life. We have seen some amazing displays of positive humanity during this crisis (For example, see the note someone left on the bins next to my street below) and collectively we can overcome this virus. This crisis will pass and it will likely lead to significant changes in the way we do science. If we can adapt to the new scientific and funding challenges then we will have a better chance of succeding in mitigating some of the long term negative consequences of the pandemic.</p>
+<p><img src="{{ site.url }}{{ site.baseurl }}/images/binsign.png" /><!-- --></p>
 </div>
 </section>
