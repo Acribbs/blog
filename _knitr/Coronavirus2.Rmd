@@ -21,7 +21,7 @@ However, our lab was given the opportunity to contribute to the Univertsity of O
 
 ```{r, echo=FALSE}
 knitr::opts_chunk$set(fig.width=12, fig.height=8) 
-knitr::include_graphics("../images/Coronavirus_protein.png")
+knitr::include_graphics("../images/Coronavirus_protein.jpg")
 ```
 
 Above is a colleague purifying 15 mg of SARS-CoV2 spike protein
