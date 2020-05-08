@@ -15,7 +15,7 @@ layout: post
 <div id="beginning-sars-cov-2-work" class="section level1">
 <h1>Beginning SARS-CoV-2 work</h1>
 <p>However, our lab was given the opportunity to contribute to the Univertsity of Oxford’s ongoing Coronavirus effort, albeit in a small way. This has resulted in our group purifying the viral spike protein that is being used for downstream drug screening efforts against COVID.</p>
-<p><img src="{{ site.url }}{{ site.baseurl }}/images/Coronavirus_protein.jpg" /><!-- --></p>
+<p><img src="{{ site.url }}{{ site.baseurl }}/images/labworking.jpg" width="50%" height="50%" /></p>
 <p>Above is a colleague purifying 15 mg of SARS-CoV2 spike protein</p>
 <p>As a consequence of this project, we now have access to relevant SARS-CoV2 research reagents. These have allowed us to reavaluate how our pre-crisis research can be useful for the current crisis. Prior to the Coronavirus crisis, myself and a colleague, Dr Martin Philpott, had been working to develop novel cost-effective single-cell sequencing analysis tools. These tools allow scientists to measure the RNA (the cells message molecule that instructs a cell to create a certain protein) levels within a single cell. Repurposing this technology, we have a hopefully come up with a potential way of also measuring the viral load of the SARS-CoV2 at the same time as RNA within a single-cell. Therefore, you can directly measure a cells response to the viral infection.</p>
 </div>
@@ -30,30 +30,11 @@ layout: post
 </div>
 <div id="the-institute-in-lockdown" class="section level1 tabset tabset-fade">
 <h1 class="tabset tabset-fade">The institute in lockdown</h1>
-<p>Pictures that I took of the research institute during the lockdown</p>
-<div id="coronavirus_2.jpg" class="section level2">
-<h2>Coronavirus_2.jpg</h2>
-<p><img src="{{ site.url }}{{ site.baseurl }}/images/Coronavirus_2.jpg" /></p>
-</div>
-<div id="coronavirus_3.jpg" class="section level2">
-<h2>Coronavirus_3.jpg</h2>
-<p><img src="{{ site.url }}{{ site.baseurl }}/images/Coronavirus_3.jpg" /></p>
-</div>
-<div id="coronavirus_4.jpg" class="section level2">
-<h2>Coronavirus_4.jpg</h2>
-<p><img src="{{ site.url }}{{ site.baseurl }}/images/Coronavirus_4.jpg" /></p>
-</div>
-<div id="coronavirus_5.jpg" class="section level2">
-<h2>Coronavirus_5.jpg</h2>
-<p><img src="{{ site.url }}{{ site.baseurl }}/images/Coronavirus_5.jpg" /></p>
-</div>
-<div id="coronavirus_6.jpg" class="section level2">
-<h2>Coronavirus_6.jpg</h2>
-<p><img src="{{ site.url }}{{ site.baseurl }}/images/Coronavirus_6.jpg" /></p>
-</div>
-<div id="coronavirus_protein.jpg" class="section level2">
-<h2>Coronavirus_protein.jpg</h2>
-<p><img src="{{ site.url }}{{ site.baseurl }}/images/Coronavirus_protein.jpg" /></p>
-</div>
+<p>Pictures that I took of the research institute during the lockdown:</p>
+<p><img src="{{ site.url }}{{ site.baseurl }}/images/Coronavirus_2.jpg" style="width:50.0%" /></p>
+<p><img src="{{ site.url }}{{ site.baseurl }}/images/Coronavirus_3.jpg" style="width:50.0%" /></p>
+<p><img src="{{ site.url }}{{ site.baseurl }}/images/Coronavirus_4.jpg" style="width:50.0%" /></p>
+<p><img src="{{ site.url }}{{ site.baseurl }}/images/Coronavirus_5.jpg" style="width:50.0%" /></p>
+<p><img src="{{ site.url }}{{ site.baseurl }}/images/Coronavirus_6.jpg" style="width:50.0%" /></p>
 </div>
 </section>

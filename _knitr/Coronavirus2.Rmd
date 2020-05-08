@@ -19,9 +19,9 @@ I, like most scientists have thought a lot about how our research pre-crisis cou
 
 However, our lab was given the opportunity to contribute to the Univertsity of Oxford's ongoing Coronavirus effort, albeit in a small way. This has resulted in our group purifying the viral spike protein that is being used for downstream drug screening efforts against COVID.
 
-```{r, echo=FALSE}
+```{r, echo=FALSE, out.width = "50%", out.height="50%"}
 knitr::opts_chunk$set(fig.width=12, fig.height=8) 
-knitr::include_graphics("../images/Coronavirus_protein.jpg")
+knitr::include_graphics("../images/labworking.jpg")
 ```
 
 Above is a colleague purifying 15 mg of SARS-CoV2 spike protein
@@ -40,16 +40,15 @@ Despite these eerie working conditions, we have begun our initial preparation wo
 
 # The institute in lockdown {.tabset .tabset-fade}
 
-Pictures that I took of the research institute during the lockdown 
+Pictures that I took of the research institute during the lockdown:
 
-```{r, results='asis', echo=FALSE}
+```{r, results='asis', echo=FALSE,  out.width = "50%", out.height="50%"}
 files <- list.files("../images/", pattern = "Coronavirus")
 
   
 for (i in files){
-  cat("## ",i,"\n")
   file <- paste0("../images/", i)
-  cat("![](",file,")")
+  cat("![](",file,"){width=50%}")
   cat('\n\n')
 }
 ```
